@@ -16,7 +16,6 @@ function cars(image, name, model,year,price){
     this.year=year;
     this.price=price;
 }
-
 var car1 = new cars('/Users/bernard.ooi/Documents/GitHub/bilupg/images/bil.jpeg','bil','ny',2010,100);
 var car2 = new cars('/Users/bernard.ooi/Documents/GitHub/bilupg/images/bil.jpeg','bil','ny',2011,2000);
 var car3 = new cars('/Users/bernard.ooi/Documents/GitHub/bilupg/images/bil.jpeg','bil','ny',2010,20);
@@ -27,8 +26,6 @@ var car7 = new cars('/Users/bernard.ooi/Documents/GitHub/bilupg/images/bil.jpeg'
 var car8 = new cars('/Users/bernard.ooi/Documents/GitHub/bilupg/images/bil.jpeg','bil','ny',2018,900);
 var car9 = new cars('/Users/bernard.ooi/Documents/GitHub/bilupg/images/bil.jpeg','bil','ny',2020,700);
 var car10 = new cars('/Users/bernard.ooi/Documents/GitHub/bilupg/images/bil.jpeg','bil','ny',2018,300);
-
-
 
 var bilar= [ car1, car2, car3, car4, car5, car6, car7, car8, car9, car10,];
 
@@ -41,12 +38,10 @@ function Car(bil)
     const tableRow2 = document.createElement("tr");
     const tableRow3 = document.createElement("tr");
     const tableRow4 = document.createElement("tr");
-
     const tableData1 = document.createElement("td");
     const tableData2 = document.createElement("td");
     const tableData3 = document.createElement("td");
     const tableData4 = document.createElement("td");
-
     const newImage = document.createElement("img");
     const id = document.createAttribute("id");
     const klass =document.createAttribute("class");
@@ -72,7 +67,6 @@ table.appendChild(tableRow1);
 table.appendChild(tableRow2);
 table.appendChild(tableRow3);
 table.appendChild(tableRow4);
-
 newDiv.appendChild(newImage);
 newDiv.appendChild(table);
 
@@ -85,5 +79,4 @@ newImage.style.height="60%";
 newDiv.style.display="inline-block";
 
 Main.appendChild(newDiv);
-
 }
